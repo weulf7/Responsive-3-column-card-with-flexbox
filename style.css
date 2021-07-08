@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+}
+
+h1 {
+  font-family: Big Shoulders Display;
+  font-weight: 700;
+  font-size: 3rem;
+  color: hsl(0, 0%, 95%);
+}
+p {
+  font-size: 1rem;
+  font-family: Lexend Deca;
+  font-weight: 300;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 2;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 870px;
+}
+.row {
+  padding: 50px 30px;
+}
+
+.left {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.middle {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.right {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+button {
+  padding: 15px 35px;
+  border: transparent;
+  border-radius: 1.5rem;
+  background-color: hsl(0, 0%, 95%);
+  font-family: Lexend Deca;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+
+  border: 2px solid hsl(0, 0%, 95%);
+}
+button:hover {
+  background-color: transparent;
+  transition: background-color 0.7s;
+  color: #fff;
+}
+.btn-1 {
+  color: hsl(31, 77%, 52%);
+}
+.btn-2 {
+  color: hsl(184, 100%, 22%);
+}
+.btn-3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.attribution{
+    
+    position: absolute;
+    top: 90%;
+    padding: 20px 30px;
+    width: 100%;
+    font-size: 2rem;
+    font-family: Lexend Deca;
+   
+    color: hsl(184, 100%, 22%);
+}
+@media (max-width: 810px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+   
+  }
+  body {
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .row {
+    border-radius: 0;
+  }
+  .attribution{
+      display: none;
+  }
+}
